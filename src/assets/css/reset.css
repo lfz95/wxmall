@@ -1,0 +1,286 @@
+@charset 'utf-8';
+/* CSS reset */
+html{color:#000; height: 100%;overflow-x:hidden}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,td,strong{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+a{text-decoration:none;outline:none;}/*此处待添加默认链接颜色*/
+var,em,strong{font-style:normal;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+ input{border:none;outline:none;padding: 0px;} 
+abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video{display: block;}
+body{-webkit-text-size-adjust:none;/*-webkit-transform-style:preserve-3d;*/}
+
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.clearfix:after {
+content:"\200B";
+display:block;
+height:0;
+clear:both;
+}
+.clearfix {
+*zoom:1;
+}
+body{
+   height: 100%;
+  -webkit-tap-highlight-color: transparent;
+   font-family:  Helvetica,"Helvetica Neue", STHeiTi, sans-serif; 
+   background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+a,button,input,textarea{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input,textarea{ outline:0; resize:none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.vux-tab .vux-tab-item.vux-tab-selected{
+	border-bottom:3px solid #dd2727 !important;
+	color: #dd2727 !important
+}
+/*CheckIcon 样式重置*/
+.vux-check-icon > .weui-icon-success:before, .vux-check-icon > .weui-icon-success-circle:before{
+  color: #f16654 !important;
+}
+.weui-icon-success{
+  font-size: .426667rem !important;
+  color: #f16654 !important;
+}
+.weui-icon-success-circle{
+  font-size: .426667rem !important;
+   color: #f16654 !important;
+}
+.weui-icon-circle{
+  font-size: .426667rem !important;
+}
+.weui-cells{
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.weui-cell{
+   padding: 0 !important;
+}
+.vux-tab-ink-bar{background-color:#dd2727 !important;}
+.content2 img{ width: 100%;overflow: hidden;}
+.vux-slider > .vux-indicator > a > .vux-icon-dot, .vux-slider .vux-indicator-right > a > .vux-icon-dot{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+/* toast样式 */
+.weui-toast{
+    top:24%;
+}
+.weui-icon_toast.weui-loading{
+    height: 1.013333rem;
+    width: 1.013333rem;
+}
+.weui-toast__content{
+    font-size: .426667rem;
+}
+.weui-icon_toast.weui-icon-success-no-circle:before {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+/* 徽标 */
+.vux-badge{
+  vertical-align:super !important;
+  height:.4rem !important;
+  line-height: .4rem !important;
+  border-radius: 50% !important;
+  background: #f36355 !important;
+  font-size: .32rem !important;
+}
+.vux-badge-single{
+  width: .4rem !important;
+}
+/* 滚动选择样式 */
+.vux-popup-picker-header{
+  height: 1.173333rem !important;
+  font-size: .426667rem !important;
+}
+.vux-popup-picker-header-menu{
+  line-height: 1.173333rem !important;
+}
+.scroller-item{
+  font-size: .426667rem !important;
+  height: .906667rem !important;
+  line-height: .906667rem !important;
+}
+.scroller-component{
+  height: 6.346667rem !important;
+}
+#app{
+   height: 100%; 
+   min-height: 100%; 
+}
+.bg{
+    background-color: #ececec;
+    height: 100%;
+    font-size: .4rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.light-gray-bg{
+    background-color: #f5f5f5;
+    height: 100%;
+    overflow-y: scroll;
+    font-size: .4rem;
+    -webkit-overflow-scrolling: touch;
+}
+.radioclass{
+  cursor: pointer;
+}
+.radioclass input {
+    display: none;
+}
+.radioclass label {
+  position: relative;
+  padding-left: 0.746667rem;
+  font-size: 0.426667rem;
+  line-height: 0.426667rem;
+}
+.radioclass label:before {
+  content: "";
+  display: block;
+  width: 0.48rem;
+  height: 0.48rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border:.04rem solid #b3b3b3;
+}
+.radioclass label:after {
+  content: "";
+  width: 0.28rem;
+  height: 0.28rem;
+  position: absolute;
+  left: 0.14rem;
+  top: 0.14rem;
+  background: #e60111;
+  display: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: none;
+}
+
+.radioclass input:checked + label:after {
+  display: block;
+}
+/*switch  滑动开关*/
+.mui-switch {
+  width: 1.386667rem;
+  height: .826667rem;
+  position: relative;
+  border: .026667rem solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: .4rem;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none; 
+}
+.mui-switch:before {
+  content: '';
+  width: .773333rem;
+  height: .773333rem;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+}
+.mui-switch:checked {
+  border-color: #64bd63;
+  box-shadow: #64bd63 0 0 0 16px inset;
+  background-color: #64bd63; 
+}
+.mui-switch:checked:before {
+  left: .586667rem; 
+}
+ 
+@font-face {
+  font-family: 'wemall';
+  src: url('../../../static/font/wemall.eot');
+  src: url('../../../static/font/wemall.eot') format('embedded-opentype'),
+       url('../../../static/font/wemall.woff2') format('woff2'),
+       url('../../../static/font/wemall.woff') format('woff'),
+       url('../../../static/font/wemall.ttf') format('truetype'),
+       url('../../../static/font/wemall.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'wemall';
+    src: url('../font/wemall.svg?96806385#wemall') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "wemall";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  /* opacity: .8; */
+ 
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+ 
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-basket:before { content: '\e801'; } /* '' */
+.icon-star-empty:before { content: '\e802'; } /* '' */
+.icon-ok-circle:before { content: '\e803'; } /* '' */
+.icon-down-dir:before { content: '\e804'; } /* '' */
+.icon-right-open-big:before { content: '\e805'; } /* '' */
+.icon-star:before { content: '\e806'; } /* '' */
+.icon-ok-circled2:before { content: '\e807'; } /* '' */
+.icon-cancel-circled-outline:before { content: '\e808'; } /* '' */
+.icon-location-outline:before { content: '\e809'; } /* '' */
+.icon-cancel-alt-filled:before { content: '\e80a'; } /* '' */
